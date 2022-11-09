@@ -67,7 +67,9 @@ on init
 
     #+chk99786, tanghongnian.wt, add, 20211029, for battery charging off if CALL_STATE_OFFHOOK
     chown system system /sys/class/qcom-battery/charging_call_state
+    chown system system /sys/class/qcom-battery/input_suspend
     chmod 0660 /sys/class/qcom-battery/charging_call_state
+    chmod 0660 /sys/class/qcom-battery/input_suspend
     #-chk99786, tanghongnian.wt, add, 20211029, for battery charging off if CALL_STATE_OFFHOOK
 
 on early-fs
